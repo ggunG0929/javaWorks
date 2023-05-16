@@ -9,7 +9,7 @@ public class StringType {
 		char ch = 'k';
 		String str = "k";
 		
-		String name = "ja" + "va";
+		String name = "ja" + "va";  // '+'는 연결 연산자
 		String str2 = name + 11.0;	// 숫자와 문자를 연결할 수 있음
 		
 		System.out.println(ch);

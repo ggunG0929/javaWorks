@@ -1,0 +1,24 @@
+package input;
+
+import java.util.Scanner;	// 클래스명에서 컨트롤 + 스페이스바를 눌러 임포트
+
+public class Input1 {
+
+	public static void main(String[] args) {
+		// 입력 처리 - Scanner
+		// java.util.Scanner 클래스를 import하여 사용함
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("당신의 이름은 무엇입니까? ");
+		String name = scan.nextLine();	// 콘솔창에 이름 입력
+		System.out.println("당신의 이름은 " + name + "(이)군요!");
+		
+		System.out.print("당신의 나이는 몇 세입니까? ");
+		int age = scan.nextInt();
+		System.out.println("당신의 나이는 " + age + "세군요!");
+		
+		scan.close();	// 닫기
+
+	}
+
+}
