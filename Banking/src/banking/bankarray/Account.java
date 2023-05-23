@@ -17,6 +17,10 @@ public class Account {
 	public String getOwner() {
 		return owner;
 	}
+	// 잔고를 저장하는 메서드
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
 	public int getBalance() {
 		return balance;
 	}

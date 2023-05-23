@@ -105,11 +105,39 @@ public class Practice {
 //		System.out.println((char)maxV);
 		
 		// 문제 4
-		char[] array = new char[30];
-		System.out.print("단어를 입력해주세요");
-		array = sc.next().toCharArray();		
+//		char[] array = new char[30];
+//		System.out.print("단어를 입력해주세요");
+//		array = sc.next().toCharArray();
+//		char[] reverse = new char[30];
+//		for(int i=0; i<array.length; i++) {
+//			if(array[array.length-i-1] != 0) {
+//				reverse[i] = array[array.length-i-1];	// 배열이므로 인덱스는 전체길이에서 1을 빼주어야함
+//				System.out.println(reverse[i]);
+//			}
+//		}
+		
+		// 문제 5
+		int[] arr = new int[10];
+		int sumV = 0;
+		double avg;
+		int num = 101;
+		System.out.print("학생의 수를 입력하시오(최대 10명) > \n");
+		int count = sc.nextInt();
+		if(count > 10) {
+			System.out.println("최대 학생수는 10명입니다.");
+		}else {
+			for(int i=0; i<count; i++) {
+				System.out.printf("학생 %d의 성적을 입력하세요 : \n", i+1);
+				num = sc.nextInt();
+				arr[i] = num;
+				sumV += arr[i];
+			}
+			avg = (double)sumV / count;
+			System.out.printf("성적 평균은 %.1f 입니다.\n", avg);
+		}
 		
 		
+
 		
 		
 		
