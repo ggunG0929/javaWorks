@@ -12,7 +12,7 @@ public class Member {
 
 	@Override
 	public int hashCode() {
-		return id.hashCode();	// 반환형이 int형 10진수 이므로 hashCode() 호출
+		return id.hashCode();	// 값을 읽어온다고 생각하면 됨
 	}
 
 	@Override
