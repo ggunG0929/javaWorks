@@ -11,6 +11,10 @@ public class Book {
 		this.bookNumber = bookNumber;
 		this.bookTitle = bookTitle;
 	}
+	
+//	public void showInfo() {
+//		System.out.println(bookNumber + ", " + bookTitle);
+//	}
 
 	// 메서드 재정의
 	// toString() 재정의
@@ -18,7 +22,7 @@ public class Book {
 	public String toString() {		// 우클>source>override implement methods>toString 체크
 		return bookNumber + ", " + bookTitle;
 	}
-
+	
 	// hashCode() 재정의
 	@Override
 	public int hashCode() {		// 우클>source>override implement methods>hashcode 체크

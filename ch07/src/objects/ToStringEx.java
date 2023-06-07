@@ -16,6 +16,7 @@ public class ToStringEx {
 		System.out.println(book);	// objects.Book@626b2d4a -> 1, 혼공 자바
 		// toString() - 객체의 정보를 문자로 출력
 		System.out.println(book.toString());
+//		book.showInfo();
 		
 	}
 
