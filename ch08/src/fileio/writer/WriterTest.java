@@ -8,7 +8,8 @@ public class WriterTest {
 
 	public static void main(String[] args) throws IOException {
 		
-		Writer fw = new FileWriter("data.txt");		// ch08에 있음	// file writer import	// writer java.io import	// add throws declaration
+//		Writer fw = new FileWriter("data.txt");		// ch08에 있음	// file writer import	// writer java.io import	// add throws declaration
+		Writer fw = new FileWriter("c:/file/newFile2.txt");
 		
 		fw.write("hello~\n");
 		fw.write("안녕\n");
