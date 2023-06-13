@@ -8,7 +8,7 @@ public class WriterTest {
 
 	public static void main(String[] args) throws IOException {
 		
-//		Writer fw = new FileWriter("data.txt");		// ch08에 있음	// file writer import	// writer java.io import	// add throws declaration
+//		Writer fw = new FileWriter("data.txt");		// ch08에 있음		// file writer import	// writer java.io import	// add throws declaration
 		Writer fw = new FileWriter("c:/file/newFile2.txt");
 		
 		fw.write("hello~\n");
@@ -21,6 +21,11 @@ public class WriterTest {
 		fw.write(buf);
 		fw.write(10);	// 줄바꿈(개행 문자)
 		fw.write(buf, 1, 4);	// 1번 인덱스부터 4개 출력
+		
+		String[] str = {"봄", "여름"};
+//		fw.write(str);	// type error
+		fw.write("봄");
+		fw.write("여름");
 		
 		fw.close();
 		
