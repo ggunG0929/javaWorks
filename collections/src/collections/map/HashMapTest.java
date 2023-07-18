@@ -24,7 +24,9 @@ public class HashMapTest {
 		System.out.println(map.get("강감찬"));	// 75
 		
 		// 객체 삭제 - key로 삭제
-		map.remove("이순신");
+		if(map.containsKey("이순신")) {	// 객체가 존재할 때만
+			map.remove("이순신");			
+		}
 		
 		// "강감찬"의 점수를 100점으로 변경
 		map.put("강감찬", 100);
